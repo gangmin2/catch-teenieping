@@ -15,7 +15,7 @@ const AllTeeniepings = () => {
 
         }
         const data = await response.json();
-        setSummary(data.summary);
+        setSummary(data);
       } catch (error) {
         console.error(error)
       } finally {
@@ -33,7 +33,7 @@ const AllTeeniepings = () => {
   }
   return (
     <div>
-      {summary.map(t => (
+      {summary && summary.map(t => (
         <TeeniepingCard
           key={t.id}
           imageUrl={t.imageUrl}
@@ -42,6 +42,9 @@ const AllTeeniepings = () => {
           name={t.name}
         />
       ))}
+      {!summary &&
+        <p>데이터가 존재하지 않습니다.</p>
+      }
     </div>
   )
 }
