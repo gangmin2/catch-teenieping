@@ -6,3 +6,6 @@
 # Build output
 /client/build
 /server/dist
+
+# Data
+/client/public/db
