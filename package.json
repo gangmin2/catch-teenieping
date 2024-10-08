@@ -1,0 +1,17 @@
+{
+  "name": "catch-teenieping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run start --prefix client\" \"npm run dev --prefix server\"",
+    "client": "npm start --prefix client",
+    "server": "npm run dev --prefix server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
