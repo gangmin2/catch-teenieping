@@ -4,7 +4,7 @@ import Badge from '../components/Badge';
 
 const TeeniepingDetail = () => {
   const { id } = useParams();
-  const [teenieping, setTeenieping] = useState({});
+  const [teenieping, setTeenieping] = useState(null);
 
   useEffect(() => {
     const fetchTeenieping = async () => {
@@ -25,7 +25,7 @@ const TeeniepingDetail = () => {
     fetchTeenieping();
   }, [id]);
 
-  if (!teenieping) return <div>Loading...</div>;
+  if (!teenieping) return <div>유효하지 않은 아이디 값으로 접근 중입니다. 유효한 아이디 값을 입력해보세요.</div>;
 
   return (
     <div>
