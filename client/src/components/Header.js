@@ -1,6 +1,10 @@
 const Header = () => {
   return (
-    <div>Header</div>
+    <div>
+      <h1>
+        캐치! 티니핑 도감
+      </h1>
+    </div>
   )
 }
 

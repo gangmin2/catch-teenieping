@@ -1,6 +1,8 @@
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>
+      &copy; nuing
+    </div>
   )
 }
 
