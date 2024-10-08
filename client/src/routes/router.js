@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         element: <AllTeeniepings />,
       },
       {
-        path: "teeniepings/:teeniepingId",
+        path: "teeniepings/:id",
         element: <TeeniepingDetail />,
       },
     ]
