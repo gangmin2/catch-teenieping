@@ -9,7 +9,7 @@ const AllTeeniepings = () => {
     const fetchSummary = async () => {
       try {
         // const response = await fetch('/teeniepings/summary');
-        const response = await fetch('/data/summaryData.json');
+        const response = await fetch('/db/summaryData.json');
         if (!response.ok) {
           throw new Error("데이터를 가져오는 중 문제가 발생했습니다.");
 
