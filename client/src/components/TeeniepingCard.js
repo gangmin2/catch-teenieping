@@ -1,15 +1,16 @@
 import Badge from "./Badge";
+import { Link } from "react-router-dom";
 
-const TeeniepingCard = ({ imageUrl, series, rank, name }) => {
+const TeeniepingCard = ({ id, imageUrl, series, rank, name }) => {
   return (
-    <div>
+    <Link to={`teeniepings/${id}`}>
       <img src={imageUrl} />
       <div>
         <Badge color='#eee' text={series} />
         <Badge color='yellow' text={rank} />
       </div>
       <p>{name}</p>
-    </div>
+    </Link>
   )
 }
 

@@ -36,6 +36,7 @@ const AllTeeniepings = () => {
       {summary && summary.map(t => (
         <TeeniepingCard
           key={t.id}
+          id={t.id}
           imageUrl={t.imageUrl}
           series={t.series}
           rank={t.rank}
